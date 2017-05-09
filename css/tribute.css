@@ -1,0 +1,90 @@
+body,html {
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+h1,h2,h4{
+    font-weight: bold;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px #b3b3b3;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption{
+    font-size: 0.9em;
+}
+
+#main {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 2px 2px 15px #000000;
+}
+
+#background,#founding,#demo {
+    margin: 5%;
+    padding: 1%;
+    text-align: left;
+}
+
+#books,#info {
+    margin-top: 5%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+#quote1,#quote2,#quote3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    text-align: center;
+}
+
+.quote {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 1.5px 1.5px 2.5px #b3b3b3;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+}
+
+footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li img {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (min-width: 900px) {
+    #background,#founding,#demo {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        }
+}
