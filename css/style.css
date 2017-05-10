@@ -569,12 +569,6 @@ textarea {
 	}
 	.logo,.site-name,.site-slogan {
 		display: none;
-	}
-	.main-navigation .navbar-default .navbar-nav > li > a {
-		font-size: 14px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 0;
 	}	
 }
 
