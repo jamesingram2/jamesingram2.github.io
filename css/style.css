@@ -565,7 +565,7 @@ textarea {
 }
 @media (max-width:767px) {
 	.header.navbar-fixed-top {
-		position: fixed;
+		position: absolute;
 	}
 	.logo,.site-name,.site-slogan {
 		display: none;
