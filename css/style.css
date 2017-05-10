@@ -565,10 +565,16 @@ textarea {
 }
 @media (max-width:767px) {
 	.header.navbar-fixed-top {
-		position: absolute;
+		position: fixed;
 	}
 	.logo,.site-name,.site-slogan {
 		display: none;
+	}
+	.main-navigation .navbar-default .navbar-nav > li > a {
+		font-size: 14px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 0;
 	}	
 }
 
