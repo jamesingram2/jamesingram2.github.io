@@ -374,6 +374,16 @@ p.copyright {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+.btn-send {
+	background-color: #339BEB;
+	color: #ffffff;
+	border: 1px solid #339BEB;
+	opacity: 0.7;
+}
+.btn-send:hover {
+	opacity: 1;
+	color: #ffffff;
+}
 .btn-default {
 	color: #55acee;
 	border: 1px solid #cccccc;
