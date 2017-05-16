@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Ingram Web Design</title>
 		<meta name="description" content="a Portfolio of Web Design and Development Projects by James Ingram">
-		<meta name="author" content="htmlcoder.me">
+		<meta name="author" content="James Ingram">
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Favicon -->
@@ -21,10 +21,10 @@
 		<link href="css/animations.css" rel="stylesheet">
 		<!-- Bootstrap.min.js -->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Worthy core CSS file -->
+		<!-- Customized Worthy CSS file -->
 		<link href="css/style.css" rel="stylesheet">
-		<!-- Custom css --> 
-		<link href="css/custom.css" rel="stylesheet">
+		<!-- Personalization JavaScript -->
+		<script src="js/welcome.js"></script>
 	</head>
 
 	<body class="no-trans">
@@ -161,8 +161,8 @@
 						<div class="row">
 							<div class="col-md-6">
 								<p>I have sought to educate myself using various self-paced online <a href="#resources">resources</a>.</p>
-								<p>In addition to these resources, I am enrolled in the <a href="https://ischool.syr.edu" target="_blank">iSchool</a> at <a href="https://www.syracuse.edu" target="_blank">Syracuse University</a> where I will obtain a master of science degree in <a href="https://ischool.syr.edu/academics/graduate/masters-degrees/ms-library-and-information-science/" target="_blank">Library and Information Science</a> and a graduate certificate in <a href="https://ischool.syr.edu/academics/graduate/cas/cas-data-science/" target="_blank">Data Science</a>. Along with traditional courses, the curriculum is heavy in information technology, reflecting the evolving role of digital information in library science.</p>
-								<p>I am also enrolled in a <a href="https://mycollege.sunybroome.edu/web/www/cis" target="_blank">Computer Information Systems</a> degree program at <a href="https://www.sunybroome.edu" target="_blank">SUNY Broome</a>, which consists of a broad spectrum of courses in information systems and information technology, including: applications programming, networking, database systems, productivity software, internet programming, system security, and systems analysis.</p>
+								<p>In addition to these resources, I am enrolled in the <a href="https://ischool.syr.edu" target="_blank">iSchool</a> at <a href="https://www.syracuse.edu" target="_blank">Syracuse University</a> where I will obtain a master of science degree in <a href="https://ischool.syr.edu/academics/graduate/masters-degrees/ms-library-and-information-science/" target="_blank">Library and Information Science</a> and a graduate certificate in <a href="https://ischool.syr.edu/academics/graduate/cas/cas-data-science/" target="_blank">Data Science</a>. Along with traditional courses, the curriculum is heavy in information technology, reflecting the evolving role of libraries in the digital age.</p>
+								<!-- <p>I am also enrolled in a <a href="https://mycollege.sunybroome.edu/web/www/cis" target="_blank">Computer Information Systems</a> degree program at <a href="https://www.sunybroome.edu" target="_blank">SUNY Broome</a>, which consists of a broad spectrum of courses in information systems and information technology, including: applications programming, networking, database systems, productivity software, internet programming, system security, and systems analysis.</p> -->
 							</div>
 							<div class="col-md-6">
 								<h3 id="resources">Certifications</h3>
@@ -377,7 +377,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h1 class="text-center">Let me put these skills to work for you!</h1>
+						<h1 class="text-center">Let my skills work for you<span class="noColor" id="insName"> </span>!</h1>
+						<script>
+							document.getElementById("insName").innerHTML=", " + name;
+						</script>
 					</div>
 				</div>
 			</div>
@@ -390,7 +393,7 @@
 			<div class="container">
 				<h1 class="text-center title" id="portfolio">Portfolio</h1>
 				<div class="separator"></div>
-				<p class="lead text-center">Preview a selection of some of my web design and other projects.<br> Check back as this will be updated regularly.</p>
+				<p class="lead text-center">Preview a selection of my web design. application, and programming projects.<br> Check back often as this section will be updated regularly.</p>
 				<br>			
 				<div class="row object-non-visible" data-animation-effect="fadeIn">
 					<div class="col-md-12">
@@ -618,7 +621,7 @@
 											<span>Web Design</span>
 										</a>
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Coming Soon</a>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Portfolio Page</a>
 								</div>
 								<!-- Modal -->
 								<div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
@@ -626,13 +629,24 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-												<h4 class="modal-title" id="project-6-label">Coming Soon</h4>
+												<h4 class="modal-title" id="project-6-label">Portfolio Page</h4>
 											</div>
 											<div class="modal-body">
-												<h3>Coming Soon</h3>
+												<h3>A responsive portfolio style webpage</h3>
 												<div class="row">
 													<div class="col-md-6">
-														<p>This section is under construction. Come back soon.</p>
+														<p>This website (the one you're on right now) was an assignment for both <a href="http://www.coursera.com" target="_blank">Coursera</a> and <a href="http://freecodecamp.com" target="_blank">Free Code Camp</a>. The objective was to create a webpage to display a body of work or collection of projects.</p>
+														<p>The site had to have at least three "pages". This could be accomplished with either three different html files or one file that links to three pages or sections. The site had to:
+															<ul>
+																<li>Validate according to W3C guidelines</li>
+																<li>Be responsive (i.e. display on different platforms and viewports)</li>
+																<li>Have a navigation bar or icon</li>
+																<li>Contain links to social media</li> 
+																<li>Be well-styled</li> 
+																<li>and have a number of enhancements (JavaScript, google maps, etc)</li>
+															</ul>
+														</p>
+														<p>No external link for this site (You're already here!)</p>
 													</div>
 													<div class="col-md-6">
 														<img src="images/portfolio-6.jpg" alt="">
@@ -985,7 +999,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
-						<h1 class="text-center">Let's Work Together!</h1>
+						<h1 class="text-center">Let's Work Together<span class="noColor" id="insertName"></span>!</h1>
+						<script>
+							document.getElementById("insertName").innerHTML=", " + name;
+						</script>
 					</div>
 				</div>
 			</div>
@@ -1005,7 +1022,8 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="footer-content">
-								<p class="large">To get a quote on a custom website or to learn what I can do for you and your business, contact me today!</p>
+								<!-- <p class="large">To get a quote on a custom website or to learn what I can do for you and your business, contact me today!</p> -->
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47350.12101162613!2d-75.99950948176674!3d42.12069267596579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daee5b1640e9a7%3A0x441af07abac381e3!2sJohnson+City%2C+NY+13790!5e0!3m2!1sen!2sus!4v1494942346515" allowfullscreen></iframe>
 								<ul class="list-icons">
 									<li><i class="fa fa-map-marker pr-10"></i><a href="https://goo.gl/maps/DiRPocpUV3K2" target="_blank"> Johnson City, NY 13790</a></li>
 									<li><i class="fa fa-phone pr-10"></i><a href="tel:1-607-624-3299"> (607) 624-3299</a></li>
@@ -1016,7 +1034,7 @@
 						<div class="col-md-6">
 							<div class="footer-content">
 								<!-- This code will not work while page is hosted on github. Github does not support php -->
-								<form id="footer-form" method="post" action="send_form_email.php">
+								<form id="footer-form" method="post" action="send_form_email.php" onsubmit="submitform()">
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="name">Name</label>
 										<input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
@@ -1037,6 +1055,9 @@
 								</form>
 							</div>
 						</div>
+						<div class ="container-fluid">
+						<div class ="row">
+						<div class ="col-sm-12">
 						<div class="footer-social-media-icons">
 							<div class="visible-lg">
 								<ul class="social-links">
@@ -1068,6 +1089,9 @@
 									<li class="freecodecamp"><a target="_blank" href="https://www.freecodecamp.com/jamesingram2"><i class="fa fa-2x fa-free-code-camp"></i></a></li>
 								</ul>
 							</div>
+						</div>
+						</div>
+						</div>
 						</div>
 					</div>
 				</div>

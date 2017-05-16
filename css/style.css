@@ -128,7 +128,15 @@ p.copyright {
 	width: 65px;
 	height: auto;
 }
-
+iframe {
+	width: 60%;
+	height: auto;
+	min-height: 200px;
+	border: 1px solid #0976b4;
+}
+.noColor {
+	color: #ffffff;
+}
 /* Layout
 ----------------------------------------------------------------------------- */
 .header {
