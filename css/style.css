@@ -580,7 +580,9 @@ textarea {
 }
 @media (max-width:767px) {
 	.header.navbar-fixed-top {
-		position: absolute;
+		position: fixed;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 	.logo,.site-name,.site-slogan {
 		display: none;
