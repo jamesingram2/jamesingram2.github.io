@@ -135,7 +135,7 @@ header .logo{
   list-style:none;
   float:left;
   margin:5px;
-  width:23%;
+  width:30%;
 }
 
 .photos img{
@@ -157,4 +157,10 @@ footer{
   .members p{
     padding-top:40px;
     }
-]
+}
+
+@media(max-width:768px){
+  .photos li{
+    width:45%;
+  }
+}
