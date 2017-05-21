@@ -209,6 +209,10 @@ iframe {
 	margin:0 auto;
 }
 
+.cert-list li{
+	list-style:none;
+}
+
 }
 @media (max-width: 300px) {
 	#profilePic img{
