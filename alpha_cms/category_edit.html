@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AlphaCMS: Edit Category</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation begin -->
+    <nav class="navbar navbar-default">
+    <!-- Container begin -->
+    <div class="container-fluid">
+      <!-- Navbar header begin -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">AlphaCMS</a>
+      </div>
+      <!-- Navbar header end -->
+      <!-- Navbar collapse begin -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="pages.html">Pages</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <input type="text" class="form-control col-lg-8 search-form" placeholder="Search">
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </div>
+      <!-- Navbar collapse end -->
+    </div>
+    <!-- Container end -->
+    </nav>
+    <!-- Navigation end -->
+    <!-- Section begin -->
+    <section>
+      <!-- Container begin -->
+      <div class="container">
+        <!-- Row begin -->
+        <div class="row">
+          <!-- Left sidebar column begin -->
+          <div class="col-md-4">
+            <!-- List group begin -->
+            <div class="list-group">
+              <a href="index.html" class="list-group-item">
+                <i class="glyphicon glyphicon-dashboard"></i> Dashboard
+              </a>
+              <a href="pages.html" class="list-group-item"><i class="glyphicon glyphicon-file"></i> Pages</a>
+              <a href="categories.html" class="list-group-item"><i class="glyphicon glyphicon-folder-open"></i> Categories</a>
+              <a href="users.html" class="list-group-item"><i class="glyphicon glyphicon-user"></i> User Accounts</a>
+            </div>
+            <!-- List group end -->
+          </div>
+          <!-- Left sidebar column end -->
+          <!-- Right column begin -->
+          <div class="col-md-8">
+            <!-- Row begin -->
+            <div class="row">
+                <!-- Column heading begin -->
+                <div class="col-md-12">
+                    <h1 class="page-header"><i class="glyphicon glyphicon-folder-open"></i> Edit Category</h1>
+                </div>
+                <!-- Column heading end -->
+            </div>
+            <!-- Row end -->
+            <!-- Breadcrumbs begin -->
+            <ol class="breadcrumb">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li class="active">Edit Category</li>
+            </ol>
+            <!-- Breadcrumbs end -->
+            <form>
+            <div class="form-group">
+                <label>Category Name</label>
+                <input type="text" class="form-control" placeholder="Edit Category Name">
+            </div>
+
+            <div class="form-group">
+                <label>Main Image</label>
+                <input type="file">
+                <p class="help-block">Max Size: 4MB</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <button type="reset" class="btn btn-default">Cancel</button>
+            </form>
+          </div>
+          <!-- Right column end -->
+        </div>
+        <!-- Row end -->
+      </div>
+      <!-- Container end -->
+    </section>
+    <!-- Section end -->
+    <!-- Footer begin -->
+    <footer>
+      <p>Copyright &copy; 2017, All Rights Reserved</p>
+    </footer>
+    <!-- Footer end -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Tablesort js begin -->
+    <script>
+    $(function(){
+        $('#sort-table').tablesorter({
+            sortList:[[0,0], [1,0]]
+        });
+    });
+    </script>
+    <!-- Tablesort js end -->
+    <!-- Search js begin -->
+    <script>
+    var $rows = $('table tr');
+    $('.search-form').keyup(function(){
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+        $rows.show().filter(function(){
+            var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+            return !~text.indexOf(val);
+        }).hide();
+    });
+    </script>
+    <!-- Search js end -->
+  </body>
+</html>
