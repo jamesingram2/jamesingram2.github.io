@@ -63,3 +63,12 @@ section{
 .price strong{
   font-size:32px;
 }
+
+@media(max-width:767px){
+  h1,h2,h3,h4,h5,h6,ul,li,a,footer,.btn,.lead{
+    font-size:85%;
+  }
+  .item img{
+    display:none;
+  }
+}
