@@ -3,6 +3,10 @@ body {
   font-size:16px;
 }
 
+.logo{
+  text-align:center;
+}
+
 .logo img{
   height:125px;
 }
