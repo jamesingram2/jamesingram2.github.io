@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="James Ingram">
+    <meta name="description" content="Cataloging Project Website for IST 616">
+    <title>STREAMing Science Library</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome Stylesheet -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Logo section begin -->
+    <section class="logo">
+      <!-- Container begin -->
+      <div class="container">
+        <!-- Row begin -->
+        <div class="row">
+          <!-- Col 1 begin -->
+          <div class="col-md-3">
+            <img src="img/stream.png">
+          </div>
+          <!-- Col 1 end -->
+          <!-- Col 2 begin -->
+          <div class="col-md-9 catalog-search">
+            <!-- Well begin -->
+            <div class="well">
+              <div class="col-md-10 col-sm-9 col-xs-8">
+                <input type="text" class="form-control domain-search" placeholder="Search Library Catalog...">
+              </div>
+              <div class="col-md-2 col-sm-3 col-xs-4">
+                <input type="button" class="btn btn-primary domain-submit" value="Search">
+              </div>
+            </div>
+            <!-- Well end -->
+          </div>
+          <!-- Col 2 end -->
+        </div>
+        <!-- Row end -->
+      </div>
+      <!-- Container end -->
+    </section>
+    <!-- Logo section end -->
+    <!-- Nav begin -->
+    <nav class="navbar navbar-inverse">
+      <!-- Container begin -->
+      <div class="container">
+        <!-- Navbar header begin -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LIBRARY</a>
+        </div>
+        <!-- Navbar header end -->
+        <!-- Navbar collapse begin -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+            <li><a href="policy.html"><i class="glyphicon glyphicon-ok-sign"></i> Policy</a></li>
+            <li><a href="examples.html"><i class="glyphicon glyphicon-list"></i> Examples</a></li>
+            <li><a href="essay.html"><i class="glyphicon glyphicon-pencil"></i> Essay</a></li>
+            <li><a href="about.html"><i class="glyphicon glyphicon-question-sign"></i> About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i> Login</a></li>
+          </ul>
+        </div>
+        <!--Navbar collapse end -->
+      </div>
+      <!-- Container end -->
+    </nav>
+    <!-- Nav end -->
+    <!-- Modal begin -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Patron email</label>
+                <input type="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter Password">
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end -->
+    <!-- Carousel begin -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <!-- First slide begin -->
+        <div class="item active">
+          <img src="img/lab.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Donec ultrices sapien</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo massa, tincidunt ac congue eget, vulputate eget est. Nunc sit amet ultricies felis. Nam ullamcorper felis in neque accumsan, volutpat feugiat odio gravida.</p>
+                  <p><a class="btn btn-primary" href="about.html">Learn More</a></p>
+                </div>
+                <div class="col-md-5">
+                  <img class="server-img" src="img/microscope.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- First slide end -->
+        <!-- Second slide begin -->
+        <div class="item">
+          <img src="img/library.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Varius blandit</h1>
+                  <p>Cras justo odio, dapibus ac faciilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricaes vehicula ut id elit.</p>
+                  <p><a class="btn btn-primary" href="about.html">Learn More</a></p>
+                </div>
+                <div class="col-md-5">
+                  <img class="server-img" src="img/textbooks.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second slide end -->
+        <!-- Third slide begin -->
+        <div class="item">
+          <img src="img/space.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Nunc accumsan</h1>
+                  <p>Cras justo odio, dapibus ac faciilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricaes vehicula ut id elit.</p>
+                  <p><a class="btn btn-primary" href="about.html">Learn More</a></p>
+                </div>
+                <div class="col-md-5">
+                  <img class="server-img" src="img/telescope.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third slide end -->
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- Marketing section begin -->
+    <section class="marketing">
+      <!-- Container begin -->
+      <div class="container">
+        <!-- Row begin -->
+        <div class="row">
+          <!-- Column 1 begin -->
+          <div class="col-md-4">
+            <i class="fa fa-5x fa-briefcase fa-border"></i>
+            <h2>Our Policy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam interdum lacus, sed aliquam nisi eleifend id.</p>
+            <p><a class="btn btn-default" href="policy.html">View Details</a></p>
+          </div>
+          <!-- Column 1 end -->
+          <!-- Column 2 begin -->
+          <div class="col-md-4">
+            <i class="fa fa-5x fa-list fa-border"></i>
+            <h2>Our Examples</h2>
+            <p>Mauris non sapien a velit porttitor venenatis. Nulla sed facilisis ipsum. Cras eget tellus gravida. Vestibulum venenatis cursus turpis.</p>
+            <p><a class="btn btn-default" href="examples.html">View Details</a></p>
+          </div>
+          <!-- Column 2 end -->
+          <!-- Column 3 begin -->
+          <div class="col-md-4">
+            <i class="fa fa-5x fa-book fa-border"></i>
+            <h2>Our Essay</h2>
+            <p>LMaecenas id sapien euismod ex viverra accumsan. Curabitur eu facilisis dolor, nec gravida orci. Maecenas placerat at nibh a viverra.</p>
+            <p><a class="btn btn-default" href="essay.html">View Details</a></p>
+          </div>
+          <!-- Column 3 end -->
+        </div>
+        <!-- Row end -->
+      </div>
+      <!-- Container end -->
+    </section>
+    <!-- Marketing section end -->
+    
+    <!-- Footer begin -->
+    <footer>
+      <div class="container">
+        <p class="pull-right"><a href="#"><i class="glyphicon glyphicon-chevron-up"></i> Back to Top</a></p>
+        <p>STREAMing Science &middot; Copyright &copy; 2017 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
