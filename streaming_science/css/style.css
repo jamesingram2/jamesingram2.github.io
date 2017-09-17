@@ -67,6 +67,38 @@ section{
   width:auto;
 }
 
+.heading-left{
+  text-align:left;
+}
+
+.heading-right{
+  text-align:right;
+}
+
+.heading-center{
+  text-align:center;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.text-right{
+  text-align:right;
+}
+
+.text-center{
+  text-align:center;
+}
+
+span{
+  color:#ccc;
+}
+
+.italic{
+  font-style:italic;
+}
+
 /* Marketing Section */
 
 .marketing{
@@ -94,7 +126,7 @@ footer a:hover{
 }
 
 @media(max-width:767px){
-  h1,h2,h3,h4,h5,h6,ul,li,a,footer,.btn,.lead{
+  h1,h2,h3,h4,h5,h6,ul,li,a,footer,p,.btn,.lead{
     font-size:85%;
   }
   .item img{
