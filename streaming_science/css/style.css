@@ -91,6 +91,14 @@ section{
   text-align:center;
 }
 
+.text-small{
+  font-size:75%;
+}
+
+figcaption{
+  font-size:50%;
+}
+
 span{
   color:#ccc;
 }
@@ -130,6 +138,9 @@ footer a:hover{
     font-size:85%;
   }
   .item img{
+    display:none;
+  }
+  figcaption{
     display:none;
   }
 }
