@@ -1,0 +1,105 @@
+body{
+	background:#333;
+	color: #fff;
+	font-family:'Arial', sans-serif;
+	font-size: 14px;
+}
+
+#container{
+	width:60%;
+	background:#1CAA98;
+	margin:20px auto;
+	overflow:auto;
+	padding:20px;
+}
+
+header{
+	text-align:center;
+	border-bottom:#fff dashed 1px;
+}
+
+header h1{
+	margin:0;
+	padding:0;
+}
+
+header p{
+	padding:0;
+	margin-top:5px;
+	color:#000;
+}
+
+section{
+	min-height:400px;
+}
+
+footer{
+	border-top:#fff dashed 1px;
+	text-align:center;
+}
+
+a:link{
+	color:#fff;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#ccc;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#888;
+	text-decoration:none;
+}
+
+a:active{
+	color:#fff;
+	text-decoration:none;
+}
+
+.button{
+	background-color:#333;
+	border:0;
+	border-radius:8px;
+	color:#fff;
+	padding:10px 15px;
+	margin:10px 5px;
+	cursor:pointer;
+}
+
+input[type='submit']{
+	background:#333;
+	border:0;
+	color:#fff;
+	cursor:pointer;
+}
+
+input[type='reset']{
+	background:#333;
+	border:0;
+	color:#fff;
+	cursor:pointer;
+}
+
+input[type='button']{
+	background:#333;
+	border:0;
+	border-radius:8px;
+	color:#fff;
+	padding:10px 15px;
+	margin:10px 5px;
+	cursor:pointer;
+}
+
+#results h3{
+	text-align:center;
+	background:#333;
+	padding: 15px;
+	margin: 10px 0;
+}
+
+#results span{
+	color:#1CAA98;
+	font-weight:bold;
+}
