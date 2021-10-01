@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xylophone app | James Ingram</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+            body {
+                background-color: #666;
+                color: #fff;
+                margin: auto;
+                text-align: center;
+                
+            }
+
+            h1 {
+                font-family: 'Oxygen', sans-serif;
+                font-size: 40px;
+                font-weight: bold;
+                color: #fff;
+            }
+            button {
+                height: 60px;
+                width: 50%;
+                border: 1px solid #fff;
+            }
+
+            a {
+                color:aquamarine;
+                text-decoration: none;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Play the Xylophone</h1>
+        <button id="cButton" style="background-color:darkBlue"></button>
+        <button id="dButton" style="background-color:blue"></button>
+        <button id="eButton" style="background-color:teal"></button>
+        <button id="fButton" style="background-color:green"></button>
+        <button id="gButton" style="background-color:yellow"></button>
+        <button id="aButton" style="background-color:orange"></button>
+        <button id="bButton" style="background-color:red"></button>
+        <button id="c5Button" style="background-color:darkRed"></button>
+
+        <script src="js/tones.js"></script>
+        <script>
+            cButton.onclick = function() {
+                tones.play('c')
+                tones.play('e')
+                }
+            dButton.onclick = function() {
+                    tones.play('d')
+                    tones.play('f')
+                }
+            eButton.onclick = function() {
+                    tones.play('e')
+                    tones.play('g')
+                }
+            fButton.onclick = function() {
+                    tones.play('f')
+                    tones.play('a')
+                }
+            gButton.onclick = function() {
+                    tones.play('g')
+                    tones.play('b')
+                }
+            aButton.onclick = function() {
+                    tones.play('a')
+                    tones.play('c', 5)
+                }
+            bButton.onclick = function() {
+                    tones.play('b')
+                    tones.play('d', 5)
+                }
+            c5Button.onclick = function() {
+                    tones.play('c', 5)
+                    tones.play('e', 5)
+                }
+        </script>
+    <footer>
+        Open source and free to share | <a href="http://jamesingram.tech" target="_blank">James Ingram</a>
+    </footer>
+    </body>
+</html>
