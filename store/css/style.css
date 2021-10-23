@@ -1,0 +1,96 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+h2 {
+	margin-left: 10px;
+}
+.topnav {
+	overflow: hidden;
+	background-color: #0e0e0e;
+	margin-botom: 40px;
+	padding: 10px;
+}
+
+.topnav h1 {
+	display: inline;
+	color: #fff;
+}
+
+.topnav a {
+	border: 1px solid #0e0e0e;
+	border-radius: 2px;
+	color: #fff;
+	float: right;
+	padding: 5px;
+	margin: 3px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: rgba(255,255,255,0.2);
+	border: 1px solid #fff;
+}
+.topnav input[type=text] {
+	float: right;
+	margin-top: 6px;
+	padding: 6px;
+	border: none;
+	margin-left: 16x;
+}
+
+.dealBox {
+	background-color: #232F3E;
+	color: #fff;
+	margin: 0px auto;
+	padding: 25px;
+
+}
+
+.dealImg {
+	display: flex;
+	justify-content: center;
+}
+.dealImg img{
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.item1,
+.item2,
+.item3 {
+	display: inline-block;
+	float: left;
+	margin: 20px 10px;
+	width: 30%;
+}
+
+.item1 img,
+.item2 img,
+.item3 img {
+	height: 300px;
+	width: 300px;
+	max-width: 90%
+}
+
+.itemName {
+	color: #0e0e0e;
+	font-weight: bold;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 10px;
+	width: 100%;
+	background-color: #0e0e0e;
+	color: #fff;
+	text-align: center;
+}
