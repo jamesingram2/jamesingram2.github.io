@@ -33,6 +33,7 @@ h2 {
 }
 
 #links a {
+  color: #fff;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -120,5 +121,5 @@ li .button {
 }
 
 i {
-  color: orange;
+  color: #ffc107;
 }
