@@ -1,0 +1,124 @@
+body {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+#nav {
+  overflow: hidden;
+  background-color: #0e0e0e;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+#logo h1 {
+  color: #fff;
+  display: inline;
+}
+
+#search {
+  margin-top: 20px;
+}
+
+#links {
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+  margin-right: 5px;
+  text-align: right;
+}
+
+#links a {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#links a:hover {
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+#links a:visited {
+  color: #fff;
+}
+
+#links input[type="text"] {
+  float: left;
+  margin-top: 10px;
+  padding: 6px;
+  border: none;
+  margin-right: 20px;
+}
+
+#steals {
+  background-color: #232f3e;
+  color: #fff;
+  margin: 0px auto;
+}
+
+#steals img {
+  margin: 40px auto;
+  display: block;
+}
+
+.responsive {
+  align-self: center;
+  border: 2px solid silver;
+  max-width: 90%;
+  margin: 20px auto;
+  height: auto;
+}
+
+#steals a {
+  text-decoration: none;
+}
+
+#hot {
+  background-color: #232f3e;
+  border: 10px solid white;
+  color: #fff;
+  margin: 20px auto 40px auto;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px auto;
+}
+
+.itemName {
+  font-weight: bold;
+}
+
+li .button {
+  border: none;
+  border-radius: 50px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  margin: 5px 2px;
+  width: 50%;
+}
+
+.button1 {
+  background-color: yellow;
+}
+
+.button2 {
+  background-color: orange;
+}
+
+.button3 {
+  background-color: lightgray;
+}
+
+i {
+  color: orange;
+}
