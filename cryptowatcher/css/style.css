@@ -1,0 +1,162 @@
+body {
+   background-color: #fff;
+   color: #0c0c0c;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+i {
+   font-size: 1.5rem;
+}
+
+h1 {
+  background-color: #fff;
+  font-size: 5.5vw;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 img {
+   height: 7.5vw;
+   display: inline-block;
+   margin-bottom: 8px;
+}
+
+h3 {
+   font-size: 1.5rem;
+   margin-top: 10px;
+   text-align: left;
+}
+
+#exchange,
+#dataTable,
+#graphs,
+#news,
+#links {
+   background-color: #fff;
+   color: #0c0c0c;
+   margin-left: 10px;
+   margin-bottom: 20px;
+}
+
+.main {
+   margin: auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 80%;
+}
+
+.main input {
+   margin-top:10px;
+   margin-bottom: 10px;
+}
+label {
+   font-size: 1rem;
+}
+ 
+.btn {
+   background-color: #fff;
+   border: 2px solid #0c0c0c;
+   border-radius: 15px;
+   color: #0c0c0c;
+   width: 150px;
+}
+ 
+.finalAmount h2 {
+   font-size: 2.25rem;
+   color: green;
+}
+
+#calculatorResults {
+   /* margin-top: 50px; */
+   margin-bottom: 20px;
+}
+#dataTable {
+   height: 365px;
+   overflow: auto;
+   padding: 0px;
+   
+}
+
+#coinTable th,
+#coinTable td {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+#coinTable th {
+  background-color: #6a6969;
+  color: #fff;
+  position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   z-index: 2;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+#coinTable tr {
+  border-bottom: 2px solid #ddd;
+}
+
+#coinTable tr:hover {
+  background-color: #0c0c0c;
+  font-weight:bolder;
+  color: #fff;
+}
+
+#graphs {
+   height: auto;
+}
+
+#graphs img {
+   width: 100%;
+}
+
+#links ul {
+   list-style-type: none;
+   padding-bottom: 20px;
+   text-align: left;
+}
+
+#links a {
+   text-decoration: none;
+}
+
+#footer p {
+   text-align: center;
+}
+
+/* Ticker Style */
+
+   /* (A) FIXED WRAPPER */
+.hwrap {
+   overflow: hidden; /* HIDE SCROLL BAR */
+   background: #fff;
+   margin: 5px;
+   margin-bottom: 20px;
+}
+
+   /* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+   /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+   flex-shrink: 10;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 8px;
+   text-align: left;
+}
+
+   /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+   /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+   0% { transform: translate3d(33%, 0, 0); }
+   100% { transform: translate3d(-500%, 0, 0); }
+}
+.hmove { animation: tickerh linear 75s infinite; }
+.hmove:hover { animation-play-state: paused; }
