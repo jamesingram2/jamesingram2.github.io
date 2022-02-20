@@ -119,5 +119,5 @@ export function importData() {
       }
    }
    setTimeout(populateData, 800)
-
 }
+importData();

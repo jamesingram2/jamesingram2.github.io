@@ -4,8 +4,7 @@ import { importData } from "./importData.js";
 import { history } from "./createVis.js";
 import { calculate } from "./calculate.js";
 
-setTimeout(importData, 500);
-setTimeout(history, 1000);
-setTimeout(calculate, 1500);
+setTimeout(history, 500);
+setTimeout(calculate, 1000);
 fetchNews();
 ticker();

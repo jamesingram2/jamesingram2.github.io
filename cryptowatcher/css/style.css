@@ -11,12 +11,11 @@ body {
 }
 
 h1 {
-   font-size: 4.5rem;
-   /* margin-bottom: 20px; */
+   font-size: 5vw;
 }
 
 h1 img {
-   height: 4.5rem;
+   height: 5vw;
 }
 
 h3 {
@@ -74,16 +73,21 @@ h3 {
 
 #graphs {
    margin-top: 0;
-   margin-bottom: 10px;
-}
-
-#tempGraph {
+   margin-bottom: 0;
    text-align: center;
-   margin-bottom: 10px;
 }
 
 #tempGraph img {
-   width: 75%;
+   text-align: center;
+   width: 100%;
+}
+
+.page-item a {
+   color: #0091C2
+}
+
+.page-item a:hover {
+   color: #076382;
 }
 
 .calculator {
@@ -108,7 +112,7 @@ h3 {
 
 .finalAmount h2 {
    font-size: 2.25rem;
-   color: #03475e;
+   color: #0091C2;
 }
 
 #calculatorResults {

@@ -15,6 +15,5 @@ export async function ticker() {
                `
            tickerBar[0].innerHTML += tickerItem
        }
-       
    })
 }
