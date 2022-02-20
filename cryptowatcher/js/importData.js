@@ -1,21 +1,28 @@
 export function importData() {
    async function fetchData() {
       const coinListDiv = document.getElementById("coinListDiv");
+      const coinListEl = document.getElementsByClassName("coinList");
+      const coin1El = document.getElementById('coin1');
+      const coin2El = document.getElementById('coin2');
       const response = await fetch("https://api.coincap.io/v2/assets");
 
       const data = await response.json();
       const coinList = data.data;
       coinList.forEach((coin) => {
          const tempCoinListHTML = `
-         <button name="${coin.symbol}" type="button" class="btn coinList" value="${coin.id}"><span class="button-text">${coin.name}</span></button><br>
+         <button name="${coin.symbol}" type="button" class="btn coinList" data-bs-dismiss="offcanvas" value="${coin.id}">${coin.name}</button><br>
          `;
          coinListDiv.innerHTML += tempCoinListHTML;
+         coin1El.innerHTML += `<option value="${coin.priceUsd}">${coin.symbol}</option>`;
+         coin2El.innerHTML += `<option value="${coin.priceUsd}">${coin.symbol}</option>`;
       })
    }
    fetchData();
 
    function populateData() {
       const coinListEl = document.getElementsByClassName("coinList");
+      const coin1El = document.getElementById('coin1');
+      const coin2El = document.getElementById('coin2');
       for (let items of coinListEl) {
          items.addEventListener('click', function() {
             let coinKey = items.value;

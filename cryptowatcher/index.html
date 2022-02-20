@@ -31,7 +31,7 @@
         <!-- main div begins -->
         <div class="row" id="main">
             <div class="row" id="coinSelector">
-                <div class="col-lg-8 col-sm-12">
+                <div class="col-l2">
                     <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Select Token</button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
@@ -45,35 +45,48 @@
             </div>
             <!-- center div begins -->
             <div class="col-lg-8 col-sm-12" id="center">
+                <!-- Current data div begins-->
                 <h3><i class="bi bi-clipboard-data"></i> Current Data</h3>
                 <div id="dataSummary">
                     <div class="row stats">
                         <div class="col-4" id="coinName">
+                            Name<br><i class="bi bi-currency-exchange"></i><br>
                         </div>
                         <div class="col-4" id="coinRank">
+                            Rank<br><i class="bi bi-bar-chart"></i><br>
                         </div>
                         <div class="col-4" id="coinSymbol">
+                            Symbol<br><i class="bi 
+                            bi-info-circle"></i><br>
                         </div>
                     </div>
                     <div class="row stats">
                         <div class="col-4" id="coinPrice">
+                            Price (USD)<br><i class="bi bi-currency-dollar"></i><br>
                         </div>
-                        <div class="col-4" id="coinCap">
+                        <div class="col-4" id="coinCap">Market Cap<br><i class="bi bi-pie-chart"></i><br>
                         </div>
-                        <div class="col-4" id="coinChange">
+                        <div class="col-4" id="coinChange">24 Hr Change<br><i class="bi bi-dash-circle"></i><br>
                         </div>
                     </div>
+                    <!-- Current data div ends -->
+                    <!-- Historic data div begins -->
                     <div class="row" id="dataVis">
                         <h3><i class="bi bi-graph-up"></i> Historical Data</h3>
                         <div class="col" id="graphs">
+                            <div id="tempGraph">
+                                <img id="placeholder" src="./img/placeholder_graph.gif" alt="placeholder graph">
+                            </div>
                         </div>
                     </div>
+                    <!-- Historic data div ends -->
+                    <!-- Currency converter div begins -->
                     <div class="row" id="exchange">
                         <h3><i class="bi bi-calculator"></i> Currency Converter</h3>
                   <div class="calculator">
                      <div class="form-group">
                         <label for="currAmt">
-                        Amount to Convert : 
+                        Amount to Convert: 
                         </label>
                         <input type="number" class="form-control searchBox" placeholder="0.00" id="currAmt" name="currAmt">
                      </div>
@@ -84,8 +97,8 @@
                                  <span class="input-group-text">From</span>
                               </div>
                               <select id="coin1" name="coin1" class="form-control from">
-                                 <option selected="selected" disabled>Select One …</option>
-                                 <option value="USD">USD</option>"
+                                 <option selected="selected" disabled>Select One…</option>
+                                 <option value="1">USD</option>"
                               </select>
                            </div>
                         </div>
@@ -95,8 +108,8 @@
                                  <span class="input-group-text">To</span>
                               </div>
                                  <select id="coin2" name="coin2" class="form-control to">
-                                    <option selected="selected" disabled>Select One …</option>
-                                    <option value ="USD">USD</option>
+                                    <option selected="selected" disabled>Select One…</option>
+                                    <option value ="1">USD</option>
                                  </select>
                            </div>
                         </div>
@@ -110,15 +123,15 @@
                   </div>
                   <div id="calculatorResults" class="text-center finalAmount">
                   </div>
+                  <!-- Currency converter div ends -->
                     </div>
                 </div>
             </div>
             <!-- center div ends -->
             <!-- right div begins -->
             <div class="col-lg-4" id="right">
-                <h3><i class="bi bi-newspaper"></i> Cryptocurrency News</h3>
-                <div class="row" id="news">
-                    
+                <h3><i class="bi bi-newspaper"></i> Crypto News</h3>
+                <div class="row" id="news">  
                 </div>
             </div>
             <!-- right div ends -->
@@ -126,7 +139,7 @@
         <!-- footer begins -->
         <div class="row">
             <div class="col" id="footer">
-                <span class="text-muted">&copy; 2022 "The Outlaws" | <i class="bi bi-link-45deg"></i><a href="">About </a> <i class="bi bi-link-45deg"></i><a href="https://github.com/jamesingram2/frontEndProject" target="_blank">GitHub Repo </a> <i class="bi bi-link-45deg"></i><a href="https://docs.coincap.io/" target="_blank">CoinCap Docs </a> <i class="bi bi-link-45deg"></i><a href="https://cryptopanic.com/developers/api/" target="_blank">CryptoPanic Docs</a> | <i class="bi bi-caret-up-fill"></i><a href="#">Back to top</a></span>
+                <span class="text-muted">&copy; 2022 "The Outlaws" | <i class="bi bi-link-45deg"></i><a href="">About </a> <i class="bi bi-link-45deg"></i><a href="https://github.com/jamesingram2/frontEndProject" target="_blank">GitHub </a> <i class="bi bi-link-45deg"></i><a href="https://docs.coincap.io/" target="_blank">CoinCap </a> <i class="bi bi-link-45deg"></i><a href="https://cryptopanic.com/developers/api/" target="_blank">CryptoPanic</a> | <i class="bi bi-caret-up-fill"></i><a href="#">Back to top</a></span>
             </div>
             </div>
         </div>
