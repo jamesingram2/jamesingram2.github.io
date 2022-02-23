@@ -1,7 +1,6 @@
 html {
    margin: 0;
    padding: 0;
-   position: relative;
 }
 
 body {
@@ -11,11 +10,11 @@ body {
 }
 
 h1 {
-   font-size: 5vw;
+   font-size: 6vw;
 }
 
 h1 img {
-   height: 5vw;
+   max-width: 7vw;
 }
 
 h1 a {
@@ -35,19 +34,12 @@ h3 {
    font-size: 1.5rem;
    margin-top: 10px;
    margin-bottom: 10px;
-   /* text-align: center; */
 }
 
 #header {
-   height: 110px;
    margin-bottom: 10px;
    padding-top: 20px;
    text-align: center;
-}
-
-#ticker {
-   height: 60px;
-   margin-bottom: 20px;
 }
 
 #coinSelector {
@@ -57,6 +49,39 @@ h3 {
    margin-left: 0;
 }
 
+#mainButton {
+   width: 200px;
+   background-color: rgba(3,70,94,.07);
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+#mainButton:hover {
+   background-color: rgb(3,70,94);
+   border-color: gray;
+   font-size: 1.2rem;
+   margin-bottom: -.15rem;
+}
+
+.offcanvas-start {
+   width: 220px;
+}
+
+.offcanvas-title {
+   padding-left: 4px;
+   margin-top: 0px;
+   font-size: 1.66rem;
+}
+
+.offcanvas-body {
+   font-size: 32px;
+}
+
+.coinIcon {
+   padding-bottom: 6px;
+   padding-right: 10px;
+}
+
 #center,
 #right {
    margin-bottom: 20px;
@@ -64,6 +89,7 @@ h3 {
 
 .stats {
    text-align: center;
+   margin-bottom: 10px;
 }
 
 .stats i {
@@ -78,16 +104,24 @@ h3 {
 #coinChange {
    background-color: #fff;
    border-radius: 25px;
-   color: #03475e;
-   margin-bottom: 20px;
    padding: 20px;
    text-align: center;
+   color: #03475e;
 }
 
 #graphs {
    margin-top: 0;
-   margin-bottom: 0;
+   margin-bottom: 0px;
    text-align: center;
+}
+
+#graphNav {
+   margin-left: 12.5vw;
+}
+
+#compare {
+   padding-left: 20px;
+   width: 210px;
 }
 
 #tempGraph img {
@@ -96,7 +130,8 @@ h3 {
 }
 
 .page-item a {
-   color: #0091C2
+   color: #0091C2;
+   cursor: pointer;
 }
 
 .page-item a:hover {
@@ -118,6 +153,7 @@ h3 {
 #calculatorResults {
    margin-bottom: 20px;
 }
+
 .btn {
    background-color: #fff;
    border: 2px solid #03475e;
@@ -157,9 +193,11 @@ h3 {
    border: 0;
    background-color: #fff;
    color: #0091C2;
-   margin: 0;
-   padding: 0;
    text-align: left;
+   width: 220px;
+   font-weight: bold;
+   font-size: 16px;
+   margin-left: -10px;
 }
 
 /* Ticker Style */
@@ -177,7 +215,7 @@ h3 {
    
       /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
    .hitem {
-      color:#03475e;
+      color:#494848;
       flex-shrink: 10;
       width: 100%;
       box-sizing: border-box;
