@@ -134,7 +134,7 @@ export function importData() {
                setTimeout(function async () {
                   const newsframe = document.getElementById('newsframe');
                   let currency = `currencies=${symbol}&amp;`
-                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=CryptoPanic%20News`
+                  newsframe.src = `https://cryptopanic.com/widgets/news/?${currency}bg_color=FFFFFF&amp;font_family=sans&amp;header_bg_color=ffffff&amp;header_text_color=666&amp;link_color=0091C2&amp;posts_limit=10&amp;text_color=0c0c0c&amp;title=Source:%20CryptoPanic`
                },500)
                let price = +dataList.priceUsd;
                price = price.toFixed(2);
@@ -150,7 +150,7 @@ export function importData() {
                let change = +dataList.changePercent24Hr;
                change = change.toFixed(4);
                change = change + "%";
-               coinNameDiv.innerHTML = `Name<br><i class="bi bi-currency-exchange"></i><br>${name}`
+               coinNameDiv.innerHTML = `Name<br><i class="bi bi-person-circle"></i><br>${name}`
                coinRankDiv.innerHTML = `Rank<br><i class="bi bi-bar-chart"></i><br>${rank}`;
                coinSymbolDiv.innerHTML = `Symbol<br><i class="bi 
                bi-info-circle"></i><br>${symbol}`;
@@ -163,40 +163,32 @@ export function importData() {
                }
 
                coinNameDiv.addEventListener('mouseover', function() {
-                  // coinNameDiv.style.fontSize="1.25rem";
                   coinNameDiv.style.color="#fff";
                   coinNameDiv.style.backgroundColor="#03465e";
-                  // coinNameDiv.style.marginBottom="0px";
                })
                coinNameDiv.addEventListener('mouseout', function() {
                   coinNameDiv.style = "";
                })
             
                coinRankDiv.addEventListener('mouseover', function() {
-                  // coinRankDiv.style.fontSize="1.25rem";
                   coinRankDiv.style.color="#fff";
                   coinRankDiv.style.backgroundColor="#03465e";
-                  // coinRankDiv.style.marginBottom="0px";
                })
                coinRankDiv.addEventListener('mouseout', function() {
                   coinRankDiv.style = "";
                })
             
                coinSymbolDiv.addEventListener('mouseover', function() {
-                  // coinSymbolDiv.style.fontSize="1.25rem";
                   coinSymbolDiv.style.color="#fff";
                   coinSymbolDiv.style.backgroundColor="#03465e";
-                  // coinSymbolDiv.style.marginBottom="0px";
                })
                coinSymbolDiv.addEventListener('mouseout', function() {
                   coinSymbolDiv.style = "";
                })
             
                coinPriceDiv.addEventListener('mouseover', function() {
-                  // coinPriceDiv.style.fontSize="1.25rem";
                   coinPriceDiv.style.color="#fff";
                   coinPriceDiv.style.backgroundColor="#03465e";
-                  // coinPriceDiv.style.marginBottom="0px";
 
                })
                coinPriceDiv.addEventListener('mouseout', function() {
@@ -204,21 +196,16 @@ export function importData() {
                })
             
                coinCapDiv.addEventListener('mouseover', function() {
-                  // coinCapDiv.style.fontSize="1.25rem";
                   coinCapDiv.style.color="#fff";
                   coinCapDiv.style.backgroundColor="#03465e";
-                  // coinCapDiv.style.marginBottom="0px";
-
                })
                coinCapDiv.addEventListener('mouseout', function() {
                   coinCapDiv.style = "";
                })
             
                coinChangeDiv.addEventListener('mouseover', function() {
-                  // coinChangeDiv.style.fontSize="1.25rem";
                   coinChangeDiv.style.color="#fff";
                   coinChangeDiv.style.backgroundColor="#03465e";
-                  // coinChangeDiv.style.marginBottom="0px";
                })
                coinChangeDiv.addEventListener('mouseout', function() {
                   coinChangeDiv.style = "";
@@ -234,4 +221,3 @@ export function importData() {
    }, 1200)
    setTimeout(populateData, 800)
 }
-importData();
