@@ -103,9 +103,9 @@ function detectCollision() {
     }
 }
 
-function stopGame() {
-    this.x = 0;
-    this.y = 0;
+function stopGame() 
+    mutePage();
+    gameCanvas.stop();
 }
 
 function createScoreLabel(x, y) {
@@ -164,3 +164,13 @@ document.getElementById("jump").addEventListener('click', function() {
 document.getElementById("restart").addEventListener('click', function() {
     document.location.reload();
 })
+
+function muteMe(elem) {
+    elem.muted = true;
+    elem.pause();
+}
+
+// Try to mute all video and audio elements on the page
+function mutePage() {
+    document.querySelectorAll("video, audio").forEach( elem => muteMe(elem) );
+}
