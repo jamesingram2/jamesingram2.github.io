@@ -9,9 +9,9 @@ let jumpSpeed = 0;
 let block;
 let score = 0;
 let scoreLabel;
-let startAudio = new Audio('./sounds/sfx-magic2.mp3');
-let jumpAudio = new Audio('./sounds/jump.mp3');
-let collisionAudio = new Audio('./sounds/collision.mp3');
+let startAudio = new Audio('./sfx-magic2.mp3');
+let jumpAudio = new Audio('./jump.mp3');
+let collisionAudio = new Audio('./collision.mp3');
 
 function startGame() {
     gameCanvas.start();
