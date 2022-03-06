@@ -1,0 +1,56 @@
+body {
+   background-color: rgb(209, 233, 241);
+   margin: 0 auto;
+   text-align: center;
+   height: 100vh;
+   width: 100%;
+}
+
+h1 {
+   font-family: cursive;
+   font-size: 4rem;
+   font-weight: 900;
+   color:rgba(5, 4, 170, 1);
+}
+
+canvas {
+   border: 2px solid black;
+   background-color: #87ceeb;
+   margin: 20px;
+}
+
+.button {
+   border: 2px solid black;
+   border-radius: 50px;
+   font-family: cursive;
+   font-size: 2rem;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   margin-top: 30px;
+   padding: 20px;
+   width: 170px;
+}
+
+#jump {
+   background-color: rgba(5, 4, 170, 0.5);
+   color: white;
+   margin-left: 40px;
+}
+
+#jump:hover {
+   cursor: pointer;
+   background-color: rgba(5, 4, 170, 1);
+   color: white;
+}
+
+#restart {
+   background-color: rgba(100, 100, 100, 0.6);
+   border: 2px solid black;
+   color: white;
+}
+
+#restart:hover {
+   cursor: pointer;
+   background-color: rgb(100, 100, 100);
+   color: white;
+}
