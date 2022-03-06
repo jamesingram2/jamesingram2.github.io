@@ -1,5 +1,5 @@
-let canvasWidth = 600;
-let canvasHeight = 400;
+let canvasWidth = "400"
+let canvasHeight = "250";
 let playArea = document.getElementById("canvas");
 let player;
 let playerYPosition = 200;
@@ -18,7 +18,7 @@ let scoreAudio = new Audio('./sounds/sfx-voice9.mp3');
 
 function startGame() {
     gameCanvas.start();
-    player = new createPlayer(30, 30, 10);
+    player = new createPlayer(20, 20, 10);
     block = new createBlock();
     scoreLabel = new createScoreLabel(10, 30);
     startAudio.play();
@@ -31,7 +31,6 @@ const gameCanvas = {
         this.canvas.height = canvasHeight;
         this.context = this.canvas.getContext("2d");
         playArea.appendChild(this.canvas);
-        // document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     }
 }
 
@@ -61,15 +60,15 @@ function createPlayer(width, height, x) {
     this.jump = function() {
         if (isJumping) {
             this.y -= jumpSpeed;
-            jumpSpeed += 0.3;
+            jumpSpeed += 0.2;
         }
     }
 }
 
 function createBlock() {
     let width = randomNumber(10, 50);
-    let height = randomNumber(10, 200);
-    let speed = randomNumber(2, 6);
+    let height = randomNumber(20, 130);
+    let speed = randomNumber(2, 4);
     this.x = canvasWidth;
     this.y = canvasHeight - height;
     this.draw = function() {
@@ -83,9 +82,9 @@ function createBlock() {
     }
     this.returnToAttackPosition = function() {
         if (this.x < 0) {
-            width = randomNumber(15, 50);
-            height = randomNumber(50, 200);
-            speed = randomNumber(4, 6);
+            width = randomNumber(10, 50);
+            height = randomNumber(20, 130);
+            speed = randomNumber(3, 5);
             this.y = canvasHeight - height;
             this.x = canvasWidth;
             score++;
@@ -105,7 +104,7 @@ function detectCollision() {
     let playerBottom = player.y + player.height;
     let blockTop = block.y;
     if (playerRight > blockLeft && playerLeft < blockLeft && playerBottom > blockTop) {
-        playArea.childNodes[0].style.backgroundColor="navy";
+        playArea.childNodes[0].style.backgroundColor="yellow";
         let jumpEl = document.getElementById("jump");
         let restartEl = document.getElementById("restart");
         jumpEl.disabled = true;
@@ -117,19 +116,6 @@ function detectCollision() {
         }, 500); 
         gameCanvas.stop();
     }
-}
-
-function stopGame() {
-    mutePage();
-}
-
-function muteMe(elem) {
-    collisionAudio.muted = true;
-    elem.pause();
-}
-
-function mutePage() {
-    document.querySelectorAll("video, audio").forEach( elem => muteMe(elem) );
 }
 
 function createScoreLabel(x, y) {

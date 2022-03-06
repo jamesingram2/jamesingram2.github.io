@@ -1,40 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 body {
-   background-image: url("https://images.unsplash.com/photo-1519758437711-f9ae52e78a95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-   /* background-color: lightblue; */
+   background-image: linear-gradient(to bottom right, rgb(74, 74, 245), rgb(57, 117, 248), rgb(140, 187, 187), rgb(138, 240, 138), rgb(35, 247, 35));
    margin: 0 auto;
    text-align: center;
-   height: 100vh;
-   width: 100%;
+   height: 800px;
+   width: 600px;
 }
 
 h1 {
-   color: rgb(12, 19, 77);
+   color: rgb(255, 255, 255);
    font-family: 'Electrolize', sans-serif;
-   font-size: 4.5rem;
+   font-size: 2.5rem;
    font-weight: 900;
-   text-shadow: 0 0 15px lime;
+   text-shadow: 0 0 10px rgb(0, 255, 0);
 }
 
 canvas {
    border: 2px solid black;
    border-radius: 20px;
-   box-shadow: 0 0 300px rgb(145, 173, 145);
+   box-shadow: 0 0 500px rgb(202, 226, 202);
    background-color: #87ceeb;
    margin-top: -20px;
 }
 
 .button {
-   border: 2px solid black;
+   border: 2px solid navy;
    border-radius: 50px;
-   box-shadow: 0 0 50px rgb(118, 158, 118);
+   /* box-shadow: 0 0 50px rgb(123, 221, 123); */
    font-family: 'Electrolize', sans-serif;
    font-size: 1.25rem;
    margin-bottom: 20px;
    margin-right: 20px;
    margin-top: 20px;
-   padding: 20px;
+   padding: 15px;
    width: 120px;
 }
 
