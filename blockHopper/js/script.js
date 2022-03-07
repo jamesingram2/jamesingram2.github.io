@@ -1,5 +1,5 @@
-let canvasWidth = "400"
-let canvasHeight = "250";
+let canvasWidth = 600;
+let canvasHeight = 400;
 let playArea = document.getElementById("canvas");
 let player;
 let playerYPosition = 200;
@@ -12,13 +12,14 @@ let score = 0;
 let scoreLabel;
 let startAudio = new Audio('./sounds/sfx-magic2.mp3');
 let jumpAudio = new Audio('./sounds/jump.mp3');
-let collisionAudio = new Audio('./sounds/collision.mp3');
 let successAudio = new Audio('./sounds/sfx-voice10.mp3')
 let scoreAudio = new Audio('./sounds/sfx-voice9.mp3');
+let collisionAudio = new Audio('./sounds/collision.mp3');
+let gameOverAudio = new Audio('./sounds/gameOver.mp3');
 
 function startGame() {
     gameCanvas.start();
-    player = new createPlayer(20, 20, 10);
+    player = new createPlayer(25, 25, 15);
     block = new createBlock();
     scoreLabel = new createScoreLabel(10, 30);
     startAudio.play();
@@ -60,14 +61,14 @@ function createPlayer(width, height, x) {
     this.jump = function() {
         if (isJumping) {
             this.y -= jumpSpeed;
-            jumpSpeed += 0.2;
+            jumpSpeed += 0.3;
         }
     }
 }
 
 function createBlock() {
     let width = randomNumber(10, 50);
-    let height = randomNumber(20, 130);
+    let height = randomNumber(25, 200);
     let speed = randomNumber(2, 4);
     this.x = canvasWidth;
     this.y = canvasHeight - height;
@@ -83,8 +84,8 @@ function createBlock() {
     this.returnToAttackPosition = function() {
         if (this.x < 0) {
             width = randomNumber(10, 50);
-            height = randomNumber(20, 130);
-            speed = randomNumber(3, 5);
+            height = randomNumber(25, 200);
+            speed = randomNumber(3, 6);
             this.y = canvasHeight - height;
             this.x = canvasWidth;
             score++;
@@ -104,16 +105,22 @@ function detectCollision() {
     let playerBottom = player.y + player.height;
     let blockTop = block.y;
     if (playerRight > blockLeft && playerLeft < blockLeft && playerBottom > blockTop) {
-        playArea.childNodes[0].style.backgroundColor="yellow";
+        playArea.childNodes[0].style.backgroundImage = "linear-gradient(to top left, black, gray, lightgray, white, lightgray, gray)"
         let jumpEl = document.getElementById("jump");
         let restartEl = document.getElementById("restart");
         jumpEl.disabled = true;
-        jumpEl.style = "background-color: lightgray; color: darkgray; border: 2px solid darkgray; cursor: auto;";
-        restartEl.style = "background-color: lime; color: royalblue; border: 2px solid navy; cursor: pointer;"
+        jumpEl.style = "background-color: rgba(255, 0, 0, 0.3); color: #eee; border: 2px solid black; cursor: auto;";
+        restartEl.style = "background-color: green; color: white; border: 2px solid black; cursor: pointer;"
         collisionAudio.play();
         setTimeout(function() {
-            collisionAudio.muted = true; 
-        }, 500); 
+            collisionAudio.muted = true;
+        }, 400);
+        setTimeout(function() {
+            gameOverAudio.play();
+        }, 500)
+        setTimeout(function() {
+            gameOverAudio.muted = true; 
+        }, 3700); 
         gameCanvas.stop();
     }
 }
@@ -149,7 +156,7 @@ function randomNumber(min, max) {
 }
 
 function resetJump() {
-    jumpSpeed = 0;
+    jumpSpeed = 0.05;
     isJumping = false;
 }
 
@@ -173,4 +180,12 @@ document.getElementById("jump").addEventListener('click', function() {
 
 document.getElementById("restart").addEventListener('click', function() {
     document.location.reload();
+})
+
+let buttonEl = document.getElementsByClassName("button")[0];
+buttonEl.addEventListener("click", function() {
+    buttonEl.style = "box-shadow: 1px 1px 1px gray; text-shadow: 0 0 0 black; border: 1px solid black; color: #ccc; background-color: rgba(255, 0, 0, 0.5";
+    setTimeout(function() {
+        buttonEl.style = "";
+    }, 200);
 })

@@ -1,55 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 body {
-   background-image: linear-gradient(to bottom right, rgb(74, 74, 245), rgb(57, 117, 248), rgb(140, 187, 187), rgb(138, 240, 138), rgb(35, 247, 35));
+   background-image: linear-gradient(to top left, rgb(10, 45, 92), rgb(57, 117, 248), rgb(140, 187, 187), rgb(127, 235, 127), rgb(0, 255, 0));
    margin: 0 auto;
    text-align: center;
-   height: 800px;
-   width: 600px;
+   height: 93.3vh;
+}
+
+#main {
+   background-image: linear-gradient(to top left, rgb(136, 136, 136), rgb(224, 223, 223));
+   border: 2px solid black;
+   border-radius: 25px;
+   box-shadow: 20px 20px 50px black;
+   height: 625px;
+   margin: 0 auto;
+   margin-top: 50px;
+   width: 700px;
 }
 
 h1 {
-   color: rgb(255, 255, 255);
+   background-color: black;
+   border: 3px solid black;
+   border-radius: 25px;
+   color: lime;
    font-family: 'Electrolize', sans-serif;
    font-size: 2.5rem;
    font-weight: 900;
-   text-shadow: 0 0 10px rgb(0, 255, 0);
+   text-shadow: 0 0 25px limegreen;
+   width: 400px;
+   margin: 20px auto;
+   padding: 5px;
 }
 
 canvas {
    border: 2px solid black;
    border-radius: 20px;
-   box-shadow: 0 0 500px rgb(202, 226, 202);
-   background-color: #87ceeb;
-   margin-top: -20px;
+   box-shadow: 0 0 100px #eee;
+   background-image: linear-gradient(to top left, #2bb2e7, #66c4e9, #fff, rgb(186, 215, 224), lightblue);
 }
 
 .button {
-   border: 2px solid navy;
+   border: 3px solid black;
    border-radius: 50px;
-   /* box-shadow: 0 0 50px rgb(123, 221, 123); */
+   box-shadow: 4px 4px 5px black;
    font-family: 'Electrolize', sans-serif;
    font-size: 1.25rem;
+   text-shadow: 2px 2px 3px black;
    margin-bottom: 20px;
    margin-right: 20px;
-   margin-top: 20px;
+   margin-top: 25px;
    padding: 15px;
    width: 120px;
 }
 
 #jump {
-   background-color: limegreen;
-   color: navy;
+   background-color: rgba(255, 0, 0, 0.75);
+   color: white;
 }
 
 #jump:hover {
    cursor: pointer;
-   background-color: lime;
-   color: royalblue;
+   background-color: red;
+   color: white;
 }
 
 #restart {
-   background-color: lightgray;
-   border: 2px solid darkgray;
-   color: darkgray;
+   background-color: rgba(0, 128, 0, 0.3);
+   border: 2px solid black;
+   color: #eee;
 }
